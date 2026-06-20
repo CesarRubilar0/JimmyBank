@@ -92,7 +92,7 @@ AppBankJimmy/
 ## 5. Estado del Despliegue en la Nube
 
 Actualmente, el proyecto se encuentra en proceso de despliegue en producción:
-- **Frontend (React)**: Desplegado en **Vercel** | Link de Acceso: [JimmyBank Portal](https://jimmy-bank-pnrn29ffn-cesarrubilar0-7929s-projects.vercel.app/login)
+- **Frontend (React)**: Desplegado en **Vercel** | Link de Acceso: [JimmyBank Portal](https://jimmy-bank.vercel.app)
 - **Backend (Express)**: Desplegado en **Render** (apuntando a la carpeta `backend/` y conectado a una base de datos PostgreSQL de producción en Render).
 
 ---
