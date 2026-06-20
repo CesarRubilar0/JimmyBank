@@ -89,7 +89,15 @@ AppBankJimmy/
 
 ---
 
-## 5. Despliegue y Puesta en Marcha Local
+## 5. Estado del Despliegue en la Nube
+
+Actualmente, el proyecto se encuentra en proceso de despliegue en producción:
+- **Frontend (React)**: Desplegado en **Vercel** | Link de Acceso: [JimmyBank Portal](https://jimmy-bank-pnrn29ffn-cesarrubilar0-7929s-projects.vercel.app/login)
+- **Backend (Express)**: Desplegado en **Render** (apuntando a la carpeta `backend/` y conectado a una base de datos PostgreSQL de producción en Render).
+
+---
+
+## 6. Despliegue y Puesta en Marcha Local
 
 ### Requisitos Previos
 - [Node.js](https://nodejs.org/) (versión 18 o superior).
@@ -140,7 +148,7 @@ Esto creará dos contenedores locales:
 
 ---
 
-## 6. Comandos Útiles de Desarrollo
+## 7. Comandos Útiles de Desarrollo
 
 ### En la carpeta `backend/`
 - `npm run dev`: Inicia el servidor de desarrollo Express con recarga automática en cambios (Nodemon).
