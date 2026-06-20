@@ -6,18 +6,7 @@ export const register = async (req, res, next) => {
   try {
     const { email, password, first_name, last_name, dni, phone, address } = req.body;
 
-    // Check if user exists
-    const existingUser = await User.findOne({
-      where: {
-        $or: [
-          { email },
-          { dni }
-        ]
-      }
-    });
-
-    // Sequelize v6 style or standard Op syntax:
-    // Let's use simple check for safety to avoid dialect or operator issues:
+    // Check if user already exists (by email or DNI) using individual checks to avoid Sequelize operator/dialect issues
     const userByEmail = await User.findOne({ where: { email } });
     if (userByEmail) {
       return res.status(400).json({ error: 'El correo electrónico ya está registrado.' });
